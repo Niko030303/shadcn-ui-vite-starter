@@ -5,6 +5,8 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "checkJs": false,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -24,6 +26,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "node_modules/react-model/src/index.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

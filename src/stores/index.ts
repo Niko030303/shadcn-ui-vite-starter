@@ -1,4 +1,4 @@
-import { Model } from '@minimalpack/react-model'
+import { Model } from '@/lib/react-model'
 import Common from './common'
 
 const models = { Common }

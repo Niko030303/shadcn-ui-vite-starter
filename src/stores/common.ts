@@ -2,15 +2,7 @@ const initialState = {
   counter: 0
 }
 
-interface StateType {
-  counter: number;
-}
-
-interface ActionsParamType {
-  increment: number;
-}
-
-const model: ModelType<StateType, ActionsParamType> = {
+const model = {
   actions: {
     increment: async (payload, { state }) => {
       return {

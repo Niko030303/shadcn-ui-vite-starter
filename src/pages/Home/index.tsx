@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from '@/components/Page'
 import request from '@/utils/request'
-import { useStore } from '@/stores'
+// import { useStore } from '@/stores'
 import { Sidebar } from './sidebar'
 import { catalogList } from '@/data/catalog-list'
 
@@ -16,7 +16,7 @@ const init = async () => {
 }
 
 const Home = () => {
-  const [{ counter }, { increment }] = useStore('Common')
+  // const [{ counter }, { increment }] = useStore('Common')
 
   React.useEffect(() => {
     init()
